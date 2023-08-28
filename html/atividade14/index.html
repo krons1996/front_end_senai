@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+    <style>
+        div {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.conteiner#teste>ul.lista#lista1>li*5>p{Paragrafo $} -->
+
+    <h1>Formulários</h1>
+    <form action="">
+        <div>
+            <label for="inome">Nome: </label>
+            <input type="text" id="inome" name="nome">
+        </div>
+        <div>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" id="isobrenome" name="sobrenome">
+        </div>
+        <input type="submit">
+    </form>
+<hr>
+    <h2>Login</h2>
+    <form action="" method="post">
+        <div>
+            <label for="idnome">Nome: </label>
+            <input type="text" id="idnome" name="nome2" placeholder="primeiro nome" required>
+        </div>
+        <div>
+            <label for="iemail">Email: </label>
+            <input type="email" id="iemail" name="email" placeholder="exemplo@email.com">
+        </div>
+        <div>
+            <label for="ipassword">Senha: </label>
+            <input type="password" id="ipassword" name="password" maxlength="16" minlength="8">
+        </div>
+        <div>
+            <label for="icolor">Selecione a Cor: </label>
+            <input type="color" id="icolor" name="color" value="#00ff00">
+        </div>
+        <div>
+            <label for="ifile">Anexe a foto<br></label>
+            <input type="file" id="ifile" name="file">
+        </div>
+        <div>
+            <label for="irange">Range</label>
+            <input type="range" id="irange" name="range" max="5">
+        </div>
+
+
+
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>    
+
+
+</body>
+
+</html>
