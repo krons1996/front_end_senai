@@ -27,7 +27,7 @@
         </div>
         <input type="submit">
     </form>
-<hr>
+    <hr>
     <h2>Login</h2>
     <form action="" method="post">
         <div>
@@ -61,7 +61,55 @@
             <input type="submit" value="Enviar">
         </div>
 
-    </form>    
+        <hr>
+
+        <div>
+            <label for="iestados">Estados</label>
+            <select name="estados" id="iestados">
+
+                <optgroup label="Nordeste">
+                    <option value="CE">
+                        CE
+                    </option>
+                    <option value="BA">
+                        BA
+                    </option>
+                </optgroup>
+                <optgroup label="Centro-oeste">
+                    <option value="DF">
+                        DF
+                    </option>
+                    <option value="SP">
+                        São Paulo
+                    </option>
+                </optgroup>
+
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="ijogo">
+                Jogo
+            </label>
+            <input type="text" name="jogo" id="ijogo" list="ijogolist">
+            <datalist name="jogolist" id="ijogolist">
+                <option value="GOD">God of War</option>
+                <option value="GOH">God Hand</option>
+            </datalist>
+            <div>
+                <label for="imensagem">Comentário</label>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="5"></textarea>
+            </div>
+            
+        </div>
+        <hr>
+        <div>
+            <label for="irange">Selecione</label>
+            <input type="range" name="range" id="irange" max="10" min="1"
+            oninput="saida.innerHTML= Number(range.value)">
+            <output id="saida"> 5 </output>
+        </div>
+    </form>
 
 
 </body>
